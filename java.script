@@ -1,0 +1,28 @@
+// main.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuBtn = document.querySelector('.md\\:hidden');
+    const nav = document.querySelector('nav');
+
+    if (mobileMenuBtn && nav) {
+        mobileMenuBtn.addEventListener('click', function () {
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('right-4');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('rounded');
+            nav.classList.toggle('shadow-lg');
+            nav.classList.toggle('space-y-4');
+            nav.classList.toggle('space-x-8');
+        });
+    }
+
+    // Smooth scroll for all anchor links that start with "#"
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this
