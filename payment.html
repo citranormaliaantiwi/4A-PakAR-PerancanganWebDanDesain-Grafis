@@ -1,0 +1,79 @@
+   <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran - HijabCollection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <a href="#" class="text-2xl font-bold text-purple-700">Hijab<span class="text-pink-500">Collection</span></a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-purple-700">Beranda</a>
+                <a href="#products" class="text-gray-700 hover:text-purple-700">Produk</a>
+                <a href="#about" class="text-gray-700 hover:text-purple-700">Tentang Kami</a>
+                <a href="#contact" class="text-gray-700 hover:text-purple-700">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Payment Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Form Pembayaran</h2>
+            <form class="max-w-lg mx-auto bg-gray-100 p-8 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-semibold mb-2">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="address" class="block text-gray-700 font-semibold mb-2">Alamat</label>
+                    <input type="text" id="address" name="address" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 font-semibold mb-2">Nomor HP</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold mb-2">Metode Pembayaran</label>
+                    <select name="payment_method" required class="w-full p-2 border border-gray-300 rounded">
+                        <option value="" disabled selected>Pilih Metode Pembayaran</option>
+                        <option value="bca">BCA</option>
+                        <option value="dana">DANA</option>
+                        <option value="mandiri">Mandiri</option>
+                        <option value="gopay">GoPay</option>
+                        <option value="ovo">OVO</option>
+                        <option value="bri">BRI</option>
+                        <option value="bni">BNI</option>
+                    </select>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">Kirim Pembayaran</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-white py-6">
+        <div class="container mx-auto text-center text-gray-400">
+            <p>© 2025 HijabCollection. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
